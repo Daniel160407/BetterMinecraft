@@ -1,6 +1,10 @@
 package net.daniel.betterminecraft;
 
 import com.mojang.logging.LogUtils;
+import net.daniel.betterminecraft.block.ModBlocks;
+import net.daniel.betterminecraft.item.ModCreativeModeTabs;
+import net.daniel.betterminecraft.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -23,6 +27,9 @@ public class BetterMinecraft {
     public BetterMinecraft() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -38,8 +45,12 @@ public class BetterMinecraft {
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
 
+            if (event.getTab() == ModCreativeModeTabs.INGREDIENTS) {
+                event.accept(ModItems.ZINC_INGOT);
+                event.accept(ModItems.BRASS_INGOT);
+                event.accept(ModBlocks.ZINC_BLOCK);
+            }
     }
-
 
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
