@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "down": "tutorialmod:block/baobab_log_top",
+    "up": "tutorialmod:block/baobab_log_top",
+    "north": "tutorialmod:block/baobab_log_side",
+    "east": "tutorialmod:block/baobab_log_side",
+    "south": "tutorialmod:block/baobab_log_side",
+    "west": "tutorialmod:block/baobab_log_side",
+    "particles": "tutorialmod:block/baobab_log_side"
+  }
+}

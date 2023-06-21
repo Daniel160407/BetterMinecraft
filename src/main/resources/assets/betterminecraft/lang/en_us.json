@@ -4,6 +4,10 @@
   "item.betterminecraft.brass_ingot": "Brass Ingot",
   "item.betterminecraft.zinc_ingot": "Zinc Ingot",
 
-  "block.betterminecraft.zinc_block": "Block Of Zinc"
-
+  "block.betterminecraft.zinc_block": "Block of Zinc",
+  "block.betterminecraft.brass_block": "Block of Brass",
+  "block.betterminecraft.silver_block": "Block of Silver",
+  "block.betterminecraft.silver_ore": "Silver Ore",
+  "block.betterminecraft.raw_silver_block": "Block of Raw Silver",
+  "block.betterminecraft.baobab_log": "Baobab Log"
 }
