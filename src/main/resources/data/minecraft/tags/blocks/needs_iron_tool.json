@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "betterminecraft:silver_ore",
+    "betterminecraft:silver_block",
+    "betterminecraft:raw_silver_block"
+  ]
+}
