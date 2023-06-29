@@ -48,6 +48,9 @@ public class BetterMinecraft {
             if (event.getTab() == ModCreativeModeTabs.INGREDIENTS) {
                 event.accept(ModItems.ZINC_INGOT);
                 event.accept(ModItems.BRASS_INGOT);
+                event.accept(ModItems.SILVER_INGOT);
+                event.accept(ModItems.RAW_SILVER);
+                event.accept(ModItems.SILVER_NUGGET);
 
 
                 event.accept(ModBlocks.ZINC_BLOCK);

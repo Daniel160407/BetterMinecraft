@@ -16,7 +16,7 @@ public class ModCreativeModeTabs {
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
         INGREDIENTS = event.registerCreativeModeTab(new ResourceLocation(BetterMinecraft.MOD_ID, "better_minecraft_tab"),
-                builder -> builder.icon(() -> new ItemStack(ModItems.ZINC_INGOT.get()))
+                builder -> builder.icon(() -> new ItemStack(ModItems.BRASS_INGOT.get()))
                         .title(Component.translatable("creativemodetab.better_minecraft_tab")));
     }
 }
