@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "betterminecraft:silver_block",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "betterminecraft:silver_ingot"
+    }
+  },
+  "result": {
+    "item": "betterminecraft:silver_block"
+  }
+}
